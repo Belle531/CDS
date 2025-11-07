@@ -111,25 +111,29 @@ const LoginView = ({ onLoginSuccess, onSwitchToRegister }) => {
 
         if (auth.isLoading) {
             return (
-                <div className="flex flex-col items-center justify-center p-12 bg-white rounded-2xl shadow-2xl w-full max-w-sm border border-gray-100">
-                    <div className="w-8 h-8 border-4 border-t-4 border-t-amber-500 border-gray-200 rounded-full animate-spin mb-3"></div>
-                    <p className="text-slate-600 font-medium">Loading auth status...</p>
+                <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md border border-gray-100">
+                    <div className="flex flex-col items-center justify-center py-8">
+                        <div className="w-8 h-8 border-4 border-t-4 border-t-amber-500 border-gray-200 rounded-full animate-spin mb-3"></div>
+                        <p className="text-slate-600 font-medium">Loading auth status...</p>
+                    </div>
                 </div>
             );
         }
         
         if (auth.error) {
             return (
-                <div className="p-6 bg-red-100 border border-red-400 rounded-xl shadow-lg w-full max-w-sm text-center">
-                    <h2 className="text-xl font-bold text-red-700 mb-2">Auth Error</h2>
-                    <p className="text-red-600 text-sm break-words">{String(auth.error)}</p>
+                <div className="bg-red-100 rounded-2xl shadow-2xl p-8 w-full max-w-md border border-red-400">
+                    <div className="text-center">
+                        <h2 className="text-xl font-bold text-red-700 mb-2">Auth Error</h2>
+                        <p className="text-red-600 text-sm break-words">{String(auth.error)}</p>
+                    </div>
                 </div>
             );
         }
 
         if (!auth.isAuthenticated) {
             return (
-                <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-sm border border-gray-100">
+                <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md border border-gray-100">
                     <h2 className="text-2xl font-semibold text-slate-800 text-center mb-6">
                         <LucideLogIn className="inline w-6 h-6 mr-2 text-amber-500" /> OIDC Sign-In
                     </h2>
@@ -162,7 +166,7 @@ const LoginView = ({ onLoginSuccess, onSwitchToRegister }) => {
         }
 
         return (
-            <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-sm border border-amber-300">
+            <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md border border-gray-100">
                 <h2 className="text-2xl font-semibold text-amber-600 text-center mb-6">
                     OIDC Login Complete
                 </h2>
@@ -181,7 +185,7 @@ const LoginView = ({ onLoginSuccess, onSwitchToRegister }) => {
 
     // Regular Login Form
     const RegularLoginForm = () => (
-        <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-sm border border-gray-100">
+        <div className="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md border border-gray-100">
             <form onSubmit={handleLogin} className="space-y-4">
                 <h2 className="text-2xl font-semibold text-slate-800 text-center mb-6">
                     <LucideLogIn className="inline w-6 h-6 mr-2" /> Account Login

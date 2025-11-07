@@ -17,7 +17,7 @@ const AuthLayout = ({ children }) => {
             </header>
 
             {/* Content Card Container (Login/Register Forms go here) */}
-            <div className="mt-24 mb-20">
+            <div className="mt-24 mb-20 w-full flex justify-center">
                 {children}
             </div>
             
