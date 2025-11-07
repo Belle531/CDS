@@ -321,3 +321,31 @@ Your final `package.json` should look similar to this:
 - No PostCSS plugin errors in console
 
 **⚠️ Remember:** Always use `@tailwindcss/postcss` in your PostCSS config, not `tailwindcss` directly
+## 📝 **Project Setup Notes**
+
+### **Prerequisites**
+
+* Ensure you have **Node.js** and **npm** installed.
+* Make sure you have a local instance of **MySQL** (or your chosen database) running.
+
+### **Database Connection**
+
+Before running the application, update the database configuration file (e.g., `config.js` or `.env`) with your credentials:
+
+* **Host:** `localhost` (or your database host)
+* **User:** `your_database_user`
+* **Password:** `your_database_password`
+* **Database Name:** `registration_login_db` (or the name you used)
+
+### **Running the Application**
+
+1.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+2.  **Start the server:**
+    ```bash
+    npm start 
+    # or node server.js (depending on your entry file)
+    ```
+3.  Access the form in your browser at: `http://localhost:3000` (or your configured port)
