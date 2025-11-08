@@ -1,10 +1,10 @@
 # 🎓 Capstone Project Talking Points
-## Registration-Login-Form with Advanced Authentication
+## CDS - Cassandra's Digital Solutions with Advanced Authentication
 
 ### 📋 Project Overview
 **Project Title:** Advanced Authentication System with Multi-Factor Verification  
 **Technology Stack:** React 19.1.1, Vite 7.1.14, Tailwind CSS 3.4.18, Lucide React Icons  
-**Repository:** Registration-Login-Form  
+**Repository:** CDS  
 **Development Period:** November 2025  
 
 ---

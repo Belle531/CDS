@@ -1,16 +1,72 @@
-# React + Vite
+# CDS - Cassandra's Digital Solutions
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Advanced Authentication System
 
-Currently, two official plugins are available:
+A modern, secure authentication platform built with React 19.1.1 and Vite, featuring multi-factor authentication, multi-language support, and an integrated dashboard with modular applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ✨ Key Features
 
-## React Compiler
+- **Multi-Factor Authentication (MFA)** - Two-stage verification process
+- **Multi-Language Support** - English, Spanish, and French
+- **Responsive Design** - Mobile-first approach with Tailwind CSS
+- **Modular Dashboard** - Extensible platform for integrated applications
+- **Advanced Security** - Modern authentication patterns and best practices
+- **Professional UI/UX** - Clean, animated interface with custom components
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛠️ Technology Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React 19.1.1, Vite 7.1.14
+- **Styling**: Tailwind CSS 3.4.18
+- **Icons**: Lucide React
+- **Authentication**: Ready for AWS Cognito integration
+- **Build Tool**: Rolldown-Vite for optimized performance
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📦 Installation
+
+```bash
+npm install
+npm run dev
+```
+
+### 🏗️ Project Structure
+
+```
+src/
+├── App.jsx           # Main application and routing
+├── LoginView.jsx     # MFA authentication
+├── RegisterView.jsx  # Multi-language registration
+├── Welcome.jsx       # Personalized welcome screen
+├── Dashboard.jsx     # Feature navigation hub
+├── ToDoApp.jsx       # Integrated task management
+└── assets/
+    └── AuthLayout.jsx # Shared authentication layout
+```
+
+### 🌟 Features Showcase
+
+1. **Registration** - Multi-language form with validation
+2. **Authentication** - MFA with custom toast notifications
+3. **Dashboard** - Modular application launcher
+4. **ToDo App** - Full-featured task management
+5. **Personalization** - Dynamic user name display
+
+### 🔒 Security Features
+
+- Client-side form validation
+- Password visibility controls
+- Session management
+- Confirmation dialogs for sensitive actions
+- Structured for JWT token integration
+
+### 📱 Responsive Design
+
+Mobile-optimized interface with:
+- Touch-friendly interactions
+- Responsive grid layouts
+- Scalable typography
+- Adaptive navigation
+
+---
+
+**Development Period**: November 2025  
+**Status**: Production Ready ✅
