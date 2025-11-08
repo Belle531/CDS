@@ -1,5 +1,5 @@
 import React from 'react';
-import { Activity, Calendar, Bell, TrendingUp, Settings } from 'lucide-react';
+import { Activity, Calendar, ChefHat, TrendingUp, Settings, Cloud } from 'lucide-react';
 
 const Dashboard = ({ handleLogout, onGoToToDo, onGoToDashboard, onGoToWelcome }) => {
 
@@ -104,14 +104,14 @@ const Dashboard = ({ handleLogout, onGoToToDo, onGoToDashboard, onGoToWelcome })
                             <span className="text-sm font-medium text-white opacity-80">Manage your daily objectives efficiently.</span>
                         </button>
                         
-                        {/* 2. Settings */}
+                        {/* 2. Weather App - Future TypeScript Addition */}
                         <button
-                            onClick={() => alert('Settings feature coming soon!')}
-                            className="flex flex-col items-start p-5 rounded-xl shadow-lg transition-all duration-300 transform hover:scale-[1.03] text-left border-2 border-transparent bg-blue-600 hover:bg-blue-700 focus:ring-blue-300 focus:outline-none focus:ring-4"
+                            onClick={() => alert('Weather App coming soon! Will be built with TypeScript.')}
+                            className="flex flex-col items-start p-5 rounded-xl shadow-lg transition-all duration-300 transform hover:scale-[1.03] text-left border-2 border-transparent bg-sky-600 hover:bg-sky-700 focus:ring-sky-300 focus:outline-none focus:ring-4"
                         >
-                            <Settings className="w-6 h-6 text-white mb-2" />
-                            <span className="text-xl font-extrabold text-white">Account Settings</span>
-                            <span className="text-sm font-medium text-white opacity-80">View and manage your user profile.</span>
+                            <Cloud className="w-6 h-6 text-white mb-2" />
+                            <span className="text-xl font-extrabold text-white">Weather Forecast</span>
+                            <span className="text-sm font-medium text-white opacity-80">Real-time weather and 5-day forecasts.</span>
                         </button>
 
                         {/* 3. Calendar */}
@@ -124,15 +124,16 @@ const Dashboard = ({ handleLogout, onGoToToDo, onGoToDashboard, onGoToWelcome })
                             <span className="text-sm font-medium text-white opacity-80">Schedule and track your appointments.</span>
                         </button>
                         
-                        {/* 4. Notifications */}
+                        {/* 4. The Spice Rack - Recipe Community App */}
                         <button
-                            onClick={() => alert('Notifications feature coming soon!')}
-                            className="flex flex-col items-start p-5 rounded-xl shadow-lg transition-all duration-300 transform hover:scale-[1.03] text-left border-2 border-transparent bg-gray-600 hover:bg-gray-700 focus:ring-gray-300 focus:outline-none focus:ring-4"
+                            onClick={() => alert('The Spice Rack coming soon! Your ultimate recipe community.')}
+                            className="flex flex-col items-start p-5 rounded-xl shadow-lg transition-all duration-300 transform hover:scale-[1.03] text-left border-2 border-transparent bg-orange-600 hover:bg-orange-700 focus:ring-orange-300 focus:outline-none focus:ring-4"
                         >
-                            <Bell className="w-6 h-6 text-white mb-2" />
-                            <span className="text-xl font-extrabold text-white">Notifications</span>
-                            <span className="text-sm font-medium text-white opacity-80">Stay updated with important alerts.</span>
+                            <ChefHat className="w-6 h-6 text-white mb-2" />
+                            <span className="text-xl font-extrabold text-white">The Spice Rack</span>
+                            <span className="text-sm font-medium text-white opacity-80">Search, save, and share recipes with the community.</span>
                         </button>
+                        
                         
                     </div>
                 </div>

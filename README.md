@@ -30,7 +30,6 @@ npm run dev
 
 ### 🏗️ Project Structure
 
-```
 src/
 ├── App.jsx           # Main application and routing
 ├── LoginView.jsx     # MFA authentication
@@ -40,7 +39,6 @@ src/
 ├── ToDoApp.jsx       # Integrated task management
 └── assets/
     └── AuthLayout.jsx # Shared authentication layout
-```
 
 ### 🌟 Features Showcase
 
@@ -61,10 +59,10 @@ src/
 ### 📱 Responsive Design
 
 Mobile-optimized interface with:
-- Touch-friendly interactions
-- Responsive grid layouts
-- Scalable typography
-- Adaptive navigation
+Touch-friendly interactions
+Responsive grid layouts
+Scalable typography
+Adaptive navigation
 
 ---
 
