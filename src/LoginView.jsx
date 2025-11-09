@@ -340,10 +340,6 @@ const LoginView = ({ onLoginSuccess, onSwitchToRegister }) => {
                                 </button>
                             </div>
                         </div>
-
-                        <p className="text-center text-xs text-slate-400 mt-6">
-                            This meets the assignment requirement for OIDC Code Flow.
-                        </p>
                         
                         <p className="text-center text-sm text-slate-600 pt-4">
                             Don't have an account?
