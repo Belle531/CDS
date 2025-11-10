@@ -47,7 +47,6 @@ const WeatherApp = ({ onBackToDashboard, user }) => {
   const [weatherData, setWeatherData] = React.useState(null);
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState('');
-  const [showDropdown, setShowDropdown] = React.useState(false);
   const [selectedLocation, setSelectedLocation] = React.useState('Current Location');
   const [customLocation, setCustomLocation] = React.useState('');
 
@@ -85,7 +84,6 @@ const WeatherApp = ({ onBackToDashboard, user }) => {
         return updated;
       });
     }
-    setShowDropdown(false);
     setCustomLocation('');
   }
 
