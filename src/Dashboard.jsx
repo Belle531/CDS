@@ -1,7 +1,7 @@
 import React from 'react';
 import { Activity, Calendar, ChefHat, TrendingUp, Settings, Cloud } from 'lucide-react';
 
-const Dashboard = ({ handleLogout, onGoToToDo, onGoToDashboard, onGoToWelcome }) => {
+const Dashboard = ({ handleLogout, onGoToToDo, onGoToDashboard, onGoToWelcome, onGoToWeather }) => {
 
     return (
         <div className="flex flex-col min-h-screen bg-gray-50 font-inter">
@@ -104,14 +104,14 @@ const Dashboard = ({ handleLogout, onGoToToDo, onGoToDashboard, onGoToWelcome })
                             <span className="text-sm font-medium text-white opacity-80">Manage your daily objectives efficiently.</span>
                         </button>
                         
-                        {/* 2. Weather App - Future TypeScript Addition */}
+                        {/* 2. Weather App */}
                         <button
-                            onClick={() => alert('Weather App coming soon! Will be built with TypeScript.')}
+                            onClick={onGoToWeather}
                             className="flex flex-col items-start p-5 rounded-xl shadow-lg transition-all duration-300 transform hover:scale-[1.03] text-left border-2 border-transparent bg-sky-600 hover:bg-sky-700 focus:ring-sky-300 focus:outline-none focus:ring-4"
                         >
                             <Cloud className="w-6 h-6 text-white mb-2" />
                             <span className="text-xl font-extrabold text-white">Weather Forecast</span>
-                            <span className="text-sm font-medium text-white opacity-80">Real-time weather and 5-day forecasts.</span>
+                            <span className="text-sm font-medium text-white opacity-80">Plan your day with weather insights (Layout Design).</span>
                         </button>
 
                         {/* 3. Calendar */}

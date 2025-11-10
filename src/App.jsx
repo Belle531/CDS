@@ -4,9 +4,10 @@ import RegisterView from './RegisterView.jsx';
 import Welcome from './Welcome.jsx';
 import Dashboard from './Dashboard.jsx';
 import ToDoApp from './ToDoApp.jsx';
+import WeatherApp from './WeatherApp.jsx';
 
 export default function App() {
-    const [currentView, setCurrentView] = useState('register'); // 'register', 'login', 'welcome', 'dashboard', 'todo'
+    const [currentView, setCurrentView] = useState('register'); // 'register', 'login', 'welcome', 'dashboard', 'todo', 'weather'
     const [isAuthenticated, setIsAuthenticated] = useState(false);
     const [user, setUser] = useState(null);
 
@@ -77,9 +78,18 @@ export default function App() {
         setCurrentView('welcome');
     };
 
+    const handleGoToWeather = () => {
+        setCurrentView('weather');
+    };
+
     const handleBackToDashboard = () => {
         setCurrentView('welcome'); // ToDo goes back to Welcome, not Dashboard
     };
+
+    // Show Weather App
+    if (currentView === 'weather') {
+        return <WeatherApp onBackToDashboard={handleBackToDashboard} user={user} />;
+    }
 
     // Show ToDo App
     if (currentView === 'todo') {
@@ -88,12 +98,12 @@ export default function App() {
 
     // Show Dashboard
     if (isAuthenticated && currentView === 'dashboard') {
-        return <Dashboard handleLogout={handleLogout} onGoToToDo={handleGoToToDo} onGoToDashboard={handleGoToDashboard} onGoToWelcome={handleGoToWelcome} />;
+        return <Dashboard handleLogout={handleLogout} onGoToToDo={handleGoToToDo} onGoToDashboard={handleGoToDashboard} onGoToWelcome={handleGoToWelcome} onGoToWeather={handleGoToWeather} />;
     }
 
     // Show Welcome (main dashboard after login)
     if (isAuthenticated && currentView === 'welcome') {
-        return <Welcome user={user} handleLogout={handleLogout} onGoToToDo={handleGoToToDo} onGoToDashboard={handleGoToDashboard} onSwitchToLogin={handleSwitchToLogin} />;
+        return <Welcome user={user} handleLogout={handleLogout} onGoToToDo={handleGoToToDo} onGoToDashboard={handleGoToDashboard} onSwitchToLogin={handleSwitchToLogin} onGoToWeather={handleGoToWeather} />;
     }
 
     // Show OIDC Login View (only login form)
