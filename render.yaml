@@ -9,3 +9,14 @@ services:
       - key: OPENWEATHER_API_KEY
         sync: false
     autoDeploy: true
+
+  - type: web
+    name: cds-frontend
+    env: node
+    plan: free
+    buildCommand: "npm run build"
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://cdsback-backend.onrender.com
+    autoDeploy: true
