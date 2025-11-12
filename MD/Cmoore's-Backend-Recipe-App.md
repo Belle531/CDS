@@ -8,7 +8,7 @@ A backend API for CMoore’s Recipe Sharing App. This project solves the problem
 
 - **Stack:** Express.js + Prisma ORM + PostgreSQL (AWS RDS)
 - **Authentication:** JWT (email/password)
-- **Validation:** Zod or Joi
+- **Validation:** Zod
 - **Deployment:** Render or AWS Lambda + API Gateway
 
 ### Main Models/Tables

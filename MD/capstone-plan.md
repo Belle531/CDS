@@ -56,7 +56,7 @@ A full-stack Recipe Sharing App where users can post, browse, and favorite recip
 - jsonwebtoken
 - bcryptjs
 - cors
-- joi or zod
+- zod
 - react
 - react-router-dom
 - tailwindcss
