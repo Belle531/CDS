@@ -15,7 +15,7 @@ const ToDoApp = ({ onBackToDashboard, user }) => {
   const userId = user?.id || user?.uid?.replace('user-', '') || '1'; // Fallback to '1' for testing
   
   // API Base URL
-  const API_BASE = 'http://localhost:3003';
+  const API_BASE = 'https://cdsback-backend.onrender.com';
 
   // Priority configuration
   const priorities = {

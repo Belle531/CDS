@@ -144,7 +144,7 @@ const LoginView = ({ onLoginSuccess, onSwitchToRegister }) => {
 
         // Standard API login call to your backend
         try {
-            const response = await fetch('http://localhost:3003/login', {
+            const response = await fetch('https://cdsback-backend.onrender.com/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
