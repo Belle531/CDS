@@ -1,22 +1,8 @@
 services:
   - type: static
     name: cds-frontend
-    env: node
     buildCommand: npm run build
     staticPublishPath: dist
-    repo: Belle531/cds
-    branch: main
-    rootDir: .
-    pullRequestPreviewsEnabled: true
-    buildFilter:
-      paths:
-        - src/**
-        - public/**
-        - package.json
-        - vite.config.js
-        - tailwind.config.js
-        - postcss.config.js
-        - .env
     envVars:
       - key: VITE_API_URL
         value: https://cdsback-backend.onrender.com
