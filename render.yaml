@@ -1,8 +1,11 @@
 services:
   - type: web
-    name: cds-frontend
-    buildCommand: npm run build
-    staticPublishPath: dist
+    name: cdsback-backend
+    env: node
+    plan: free
+    buildCommand: "npm install"
+    startCommand: "npm start"
     envVars:
-      - key: VITE_API_URL
-        value: https://cdsback-backend.onrender.com
+      - key: OPENWEATHER_API_KEY
+        sync: false
+    autoDeploy: true
