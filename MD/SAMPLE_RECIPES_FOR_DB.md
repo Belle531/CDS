@@ -40,4 +40,3 @@ Below are the recipes previously displayed on your cards. You can use this infor
 ---
 
 **Tip:** Add more fields (ingredients, instructions, image URLs) as needed for your database schema.
-

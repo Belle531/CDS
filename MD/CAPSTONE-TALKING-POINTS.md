@@ -49,11 +49,9 @@
 
 ---
 
-
 ## Project Overview
 
 - Briefly describe your chosen project idea and its purpose (e.g., Recipe Sharing App: users post, favorite, and discover recipes).
-
 
 ## Planning & Architecture
 
@@ -64,13 +62,11 @@
 - Mention deployment plan (S3/CloudFront, Vercel, Netlify, etc.).
 - Note any key NPM libraries/tools (Axios, Tailwind, Lucide, etc.).
 
-
 ## Backend Implementation
 
 - Describe how you set up models/entities and routes.
 - Highlight authentication, validation, and error handling.
 - Share deployment steps and any challenges.
-
 
 ## Frontend Implementation
 
@@ -78,13 +74,11 @@
 - Show how you integrated with backend API.
 - Point out protected routes and responsive design features.
 
-
 ## Deployment & Testing
 
 - Explain how you deployed both backend and frontend.
 - Confirm frontend-backend communication works in production.
 - List automated and manual tests performed.
-
 
 ## Presentation & Demo
 
@@ -92,7 +86,5 @@
 - Be ready to explain architecture, data flow, and tech stack.
 - Show code for major features and answer Q&A.
 - Implement a new feature live as requested by instructor.
-
----
 
 **Tip:** Use this as a checklist to guide your project work and final presentation. Update with specific details as you build your app.
